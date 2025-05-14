@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tailor Citra Busana</title>
+  <link rel="icon" href="image/logo.png">
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    body.fade-out {
+      opacity: 0;
+    }
+
+    header {
+      background: #D8D2C2;
+      color: #000000;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      margin: 0;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    header nav ul li {
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 20px;
+      padding: 5px 7px;
+      transition: background-color 0.3s;
+      border-radius: 10px;
+    }
+
+    header nav ul li a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    .flip-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #f8f9fa;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 200px;
+      height: 280px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .flip-card-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .flip-card-back {
+      background-color: #fff;
+      color: black;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .flip-card-back a {
+      color: #222;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .flip-card-back a:hover {
+      color: #555;
+    }
+
+    footer {
+      background-image: url('image/mesin1.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: rgb(15, 0, 0);
+      padding: 20px 10px;
+      font-family: 'Times New Roman', serif;
+      font-size: 14px;
+    }
+
+    .footer-container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(189, 167, 116, 0.85);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .footer-left h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-links ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 0;
+      gap: 5px;
+    }
+
+    .footer-links ul li a {
+      color: rgb(13, 13, 13);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+    }
+
+    .social-icons a img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="home.html"><img src="image/logo.png" alt="Logo Tailor Citra Busana"></a>
+    </div>
+    <h1>Tailor Citra Busana</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="layanan booking.html">Layanan Booking</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+        <li><a href="pengembang.html">Pengembang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Anggota Tim</h2>
+  <section class="flip-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="portfolio-amelia.html">
+            <img src="image/amel.jpeg" alt="Amelia Esa Puspa Ningrum">
+          </a>
+        </div>
+        <div class="flip-card-back">
+          <a href="portfolio-amelia.html">Amelia Esa Puspa Ningrum</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="portfolio-dita.html">
+            <img src="image/dita.jpeg" alt="Dita Ayu Saputri">
+          </a>
+        </div>
+        <div class="flip-card-back">
+          <a href="portfolio-dita.html">Dita Ayu Saputri</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="portfolio-citra.html">
+            <img src="image/citra.jpeg" alt="Citra Kusuma Ningrum">
+          </a>
+        </div>
+        <div class="flip-card-back">
+          <a href="portfolio-citra.html">Citra Kusuma Ningrum</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="portfolio-yusron.html">
+            <img src="image/yusron.jpeg" alt="Ahmad Yusron Sani">
+          </a>
+        </div>
+        <div class="flip-card-back">
+          <a href="portfolio-yusron.html">Ahmad Yusron Sani</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="portfolio-aldo.html">
+            <img src="image/aldo.jpeg" alt="Aldo Pratama">
+          </a>
+        </div>
+        <div class="flip-card-back">
+          <a href="portfolio-aldo.html">Aldo Pratama</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <a href="portfolio-habib.html">
+            <img src="image/habib.jpeg" alt="Habib Galih Panjalu">
+          </a>
+        </div>
+        <div class="flip-card-back">
+          <a href="https://habibgalih23.github.io/Portofolio/" target="_blank" >Habib Galih Panjalu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Melayani :</h3>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Jahit Seragam</a></li>
+            <li><a href="#">Jahit Gamis</a></li>
+            <li><a href="#">Jahit Baju Koko</a></li>
+            <li><a href="#">Jahit Rok</a></li>
+            <li><a href="#">Jahit Kebaya</a></li>
+            <li><a href="#">Chobani® Mexico</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="https://web.whatsapp.com/"><img src="image/wa (3).png" alt="whatsapp"></a>
+          <a href="#"><img src="image/gmail.png" alt="email"></a>
+          <a href="#"><img src="image/loc.png" alt="alamat"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("a[href]:not([href^='#']):not([target])");
+
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const href = this.getAttribute("href");
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        });
+      });
+    });
+  </script>
+</body>
+</html

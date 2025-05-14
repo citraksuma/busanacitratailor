@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tailor Citra Busana</title>
+  <link rel="icon" href="image/logo.png" />
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    body.fade-out {
+      opacity: 0;
+    }
+
+    header {
+      background: #D8D2C2;
+      color: #000000;
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      margin: 0;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    header nav ul li {
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 20px;
+      padding: 5px 7px;
+      transition: background-color 0.3s;
+      border-radius: 10px;
+    }
+
+    header nav ul li a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+
+    .hero {
+      background-color: #ffffff;
+      padding: 60px 20px;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #6f4e37;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 500px;
+      color: #4b3b2f;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #6f4e37;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #5a3e2b;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-image img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-image: url('image/mesin1.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: rgb(15, 0, 0);
+      padding: 20px 10px;
+      font-family: 'Times New Roman', serif;
+      font-size: 14px;
+    }
+
+    .footer-container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(189, 167, 116, 0.85);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .footer-left h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .footer-links ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px 0;
+      gap: 5px;
+    }
+
+    .footer-links ul li a {
+      color: rgb(13, 13, 13);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .social-icons {
+      margin-top: 5px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .social-icons a img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="home.html"><img src="image/logo.png" alt="Logo Tailor Citra Busana"></a>
+    </div>
+    <h1>Tailor Citra Busana</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="layanan booking.html">Layanan booking</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+        <li><a href="pengembang.html">Pengembang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Website <span style="color:#6f4e37;">Tailor Citra Busana</span></h1>
+        <p>Solusi jahit terpercaya dengan hasil rapi dan berkualitas. Terima jahit seragam, gamis, kebaya, dan lainnya.</p>
+        <a href="layanan booking.html" class="btn">Pesan Sekarang</a>
+      </div>
+      <div class="hero-image">
+        <img src="image/ukur.jpg" alt="Ilustrasi Menjahit">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Melayani :</h2>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Jahit Seragam</a></li>
+            <li><a href="#">Jahit Gamis</a></li>
+            <li><a href="#">Jahit Baju Koko</a></li>
+            <li><a href="#">Jahit Rok</a></li>
+            <li><a href="#">Jahit Kebaya</a></li>
+            <li><a href="#">Permak</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="https://web.whatsapp.com/"><img src="image/wa (3).png" alt="whatsapp"></a>
+          <a href="mailto:habibgalehpanjalu@gmail.com"><img src="image/gmail.png" alt="email"></a>
+          <a href="https://maps.app.goo.gl/SvhuYUuo2YmzrnQ87"><img src="image/loc.png" alt="alamat"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tambahkan efek fade-out saat klik navigasi
+    document.querySelectorAll('a[href]').forEach(link => {
+      const url = link.getAttribute('href');
+      // Hanya berlaku untuk link internal (bukan # dan bukan javascript)
+      if (url && !url.startsWith('#') && !url.startsWith('javascript')) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = this.href;
+          }, 500); // waktu fade-out sama seperti transition CSS
+        });
+      }
+    });
+  </script>
+</body>
+</html>
